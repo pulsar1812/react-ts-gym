@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
+import Benefits from "./scenes/benefits";
 import { SelectedPage } from "./shared/types";
 
 export default function App() {
@@ -32,6 +33,7 @@ export default function App() {
         isTopOfPage={isTopOfPage}
       />
       <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
     </div>
   );
 }
