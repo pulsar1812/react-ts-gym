@@ -5,6 +5,7 @@ import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
 import Benefits from "./scenes/benefits";
 import OurClasses from "./scenes/our-classes";
+import Contact from "./scenes/contact";
 
 export default function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -36,6 +37,7 @@ export default function App() {
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
+      <Contact setSelectedPage={setSelectedPage} />
     </div>
   );
 }
