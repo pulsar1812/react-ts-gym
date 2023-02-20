@@ -69,7 +69,9 @@ export default function Contact({ setSelectedPage }: Props) {
           >
             <form
               method="POST"
-              action="https://formsubmit.co/"
+              action={`https://formsubmit.co/${
+                import.meta.env.VITE_FORM_SUBMIT_TOKEN
+              }`}
               target="_blank"
               onSubmit={handleSubmit}
             >
